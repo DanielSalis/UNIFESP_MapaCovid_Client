@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../media";
 
 export const Container = styled.div`
   box-shadow: 2px 2px #00000052;
@@ -11,6 +12,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  ${media.mobile`
+  width: 22%;
+`}
 `;
 
 export const SpanLayers = styled.div`
@@ -40,12 +45,16 @@ export const LogoContainer = styled.div`
   label {
     font-weight: 500;
     font-size: 1rem;
+
+    ${media.mobile`
+    font-size: 12px;
+  `}
   }
 `;
 
 export const ImgContainer = styled.div`
-  width: 6rem;
-  height: 6rem;
+  width: 85%;
+  height: 75%;
   display: flex;
   flex-direction: row;
   justify-content: center;

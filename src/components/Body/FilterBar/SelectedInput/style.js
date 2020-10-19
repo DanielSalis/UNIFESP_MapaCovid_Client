@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../../../media";
 
 export const Container = styled.div`
   background: #1890ff !important;
@@ -6,6 +7,7 @@ export const Container = styled.div`
   padding: 0 10px;
   color: #fff;
   min-width: 4rem;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,4 +29,8 @@ export const Container = styled.div`
 
     justify-content: flex-start;
   }
+
+  ${media.mobile`
+  margin: 0 1rem 0.2rem 1rem;
+`}
 `;
