@@ -7,7 +7,8 @@ export const Container = styled.div`
     display:flex;
     flex-direction:row;
     align-items:center;
+    justify-content: space-between;
     h2{
         margin:0 0 0 1%
-    }
+    };
 `;
